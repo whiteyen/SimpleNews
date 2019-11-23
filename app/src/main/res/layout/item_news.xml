@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_icon"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:textSize="16dp"
+            android:text="新闻标题"
+            android:textColor="#1d1d1d"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tv_from"
+                android:textSize="14dp"
+                android:text="新闻来源"
+                android:textColor="#999999"
+                android:singleLine="true"
+
+                android:layout_marginTop="2dp"
+                />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:paddingRight="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tv_date"
+                android:textSize="14dp"
+                android:text="日期"
+                android:textColor="#999999"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

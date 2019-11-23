@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ToutiaoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.bilibili.news.ui.widget.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/list_view"
+            android:layout_height="match_parent"/>
+    </com.bilibili.news.ui.widget.RefreshLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/progress_bar"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_background"
+        android:visibility="gone"
+        android:id="@+id/iv_error"
+        />
+
+</RelativeLayout>
